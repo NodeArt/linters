@@ -21,7 +21,7 @@ module.exports = {
   },
   rules: {
     // Will be anoying with a different backend convention
-    'camelcase': [ 'off' ],
+    'camelcase': [ 'warn' ],
     // Don't need useless import of React
     'react/react-in-jsx-scope': 'off',
     'import/no-unresolved': 'off',
