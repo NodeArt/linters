@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
   },
   extends: [
+    'plugin:react/recommended',
     '../base/.eslintrc.js',
   ],
   parserOptions: {
