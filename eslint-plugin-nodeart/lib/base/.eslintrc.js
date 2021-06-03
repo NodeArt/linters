@@ -1,12 +1,23 @@
 module.exports = {
   env: {
-    browser: true,
     es2021: true,
-    node: true,
+    es6: false,
+    node: false,
+    browser: false,
   },
-  extends: ["eslint:recommended"],
+  extends: [
+    'eslint:recommended',
+    'plugin:sonarjs/recommended',
+    'metarhia',
+  ],
+  plugins: [
+    'sonarjs',
+  ],
   parserOptions: {
     ecmaVersion: 2021,
-    sourceType: "module",
+    sourceType: 'module',
+  },
+  rules: {
+    'import/no-unresolved': 'off',
   },
 };
