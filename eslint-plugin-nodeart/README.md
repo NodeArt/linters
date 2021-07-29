@@ -10,10 +10,10 @@ You'll first need to install [ESLint](http://eslint.org):
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-nodeart`:
+Next, install `@nodeart/eslint-plugin`:
 
 ```
-$ npm install eslint-plugin-nodeart --save-dev
+$ npm install @nodeart/eslint-plugin --save-dev
 ```
 
 
@@ -24,12 +24,17 @@ Add `nodeart` to the plugins section of your `.eslintrc` configuration file. You
 ```json
 {
     "plugins": [
-        "nodeart"
+        "@nodeart"
     ]
 }
 ```
 
+Then add a specific config to the `extends` section:
 
-
-
-
+```json
+{
+    "extends": [
+        "plugin:@nodeart/react"
+    ]
+}
+```

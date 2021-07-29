@@ -4,7 +4,7 @@ module.exports = {
   },
   extends: [
     'plugin:react/recommended',
-    '../base/.eslintrc.js',
+    'plugin:@nodeart/base',
   ],
   parserOptions: {
     ecmaFeatures: {
