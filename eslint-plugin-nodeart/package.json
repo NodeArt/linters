@@ -1,6 +1,6 @@
 {
   "name": "@nodeart/eslint-plugin",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "ESLint plugin from NodeArt",
   "keywords": [
     "eslint",
