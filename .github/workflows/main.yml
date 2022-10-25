@@ -15,3 +15,8 @@ jobs:
         with:
           token: ${{ secrets.NPM_TOKEN }}
           package: ./eslint-plugin-nodeart/package.json
+          access: public
+          greater-version-only: true
+      - if: steps.publish.outputs.type != 'none'
+        run: |
+          echo "Version changed: ${{ steps.publish.outputs.old-version }} => ${{ steps.publish.outputs.version }}"
